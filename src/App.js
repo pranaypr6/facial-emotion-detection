@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import RealtimeRecognition from "./components/RealtimeRecognition";
+import PhotoRecognition from "./components/PhotoRecognition";
+import "semantic-ui-css/semantic.min.css";
+import "./App.css";
+import Home from "./components/Home";
 
-function App() {
+const App = () => {
+  const a = () => {
+    console.log("hello");
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={Home} exact={true} />
+        <Route path="/realtime" component={RealtimeRecognition} exact={true} />
+        <Route path="/withphoto" component={PhotoRecognition} exact={true} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;

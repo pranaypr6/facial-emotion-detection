@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ui.basic.linkedin.button,
+.ui.basic.linkedin.buttons,
+.button {
+  box-shadow: 0 0 0 1px #fff inset !important;
+  color: #fff !important;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video {
+  border: 3px solid #ececec;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="file"] {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-file-upload {
+  border: 1.3px solid #fff;
+  display: inline-block;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 12px 20px !important;
+  cursor: pointer;
 }
